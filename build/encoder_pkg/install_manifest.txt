@@ -1,0 +1,17 @@
+/home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/lib/encoder_pkg/encoders_node
+/home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/launch/encoders.launch.py
+/home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/ament_index/resource_index/package_run_dependencies/encoder_pkg
+/home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/ament_index/resource_index/parent_prefix_path/encoder_pkg
+/home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/environment/ament_prefix_path.sh
+/home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/environment/ament_prefix_path.dsv
+/home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/environment/path.sh
+/home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/environment/path.dsv
+/home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/local_setup.bash
+/home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/local_setup.sh
+/home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/local_setup.zsh
+/home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/local_setup.dsv
+/home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/package.dsv
+/home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/ament_index/resource_index/packages/encoder_pkg
+/home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/cmake/encoder_pkgConfig.cmake
+/home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/cmake/encoder_pkgConfig-version.cmake
+/home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/package.xml

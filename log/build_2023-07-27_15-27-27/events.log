@@ -1,0 +1,341 @@
+[0.000000] (-) TimerEvent: {}
+[0.001533] (encoder_pkg) JobQueued: {'identifier': 'encoder_pkg', 'dependencies': OrderedDict()}
+[0.002128] (encoder_pkg) JobStarted: {'identifier': 'encoder_pkg'}
+[0.059392] (encoder_pkg) JobProgress: {'identifier': 'encoder_pkg', 'progress': 'cmake'}
+[0.060465] (encoder_pkg) Command: {'cmd': ['/usr/bin/cmake', '/home/hcappel1/ros2_ws/src/encoder_pkg', '-DCMAKE_INSTALL_PREFIX=/home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg'], 'cwd': '/home/hcappel1/ros2_ws/src/encoder_pkg/build/encoder_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hcappel1'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/hcappel1'), ('OLDPWD', '/home/hcappel1/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1578'), ('SYSTEMD_EXEC_PID', '1809'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4325'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/hcappel1/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hcappel1'), ('JOURNAL_STREAM', '8:27671'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hcappel1'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/henry-pi:@/tmp/.ICE-unix/1741,unix/henry-pi:/tmp/.ICE-unix/1741'), ('INVOCATION_ID', 'ce95da3047f74caebeabcc7b4c12c7bc'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.YILR81'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hcappel1/ros2_ws/install/motor_control:/home/hcappel1/ros2_ws/install/encoder_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:0b73d5af-779a-48ad-9dfb-46de81fb324f'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hcappel1/ros2_ws/src/encoder_pkg/build/encoder_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hcappel1/ros2_ws/install/motor_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hcappel1/ros2_ws/install/encoder_pkg:/home/hcappel1/ros2_ws/install/motor_control:/opt/ros/humble')]), 'shell': False}
+[0.099064] (-) TimerEvent: {}
+[0.199883] (-) TimerEvent: {}
+[0.300843] (-) TimerEvent: {}
+[0.402099] (-) TimerEvent: {}
+[0.503177] (-) TimerEvent: {}
+[0.604298] (-) TimerEvent: {}
+[0.650620] (encoder_pkg) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.3.0\n'}
+[0.704573] (-) TimerEvent: {}
+[0.805603] (-) TimerEvent: {}
+[0.906862] (-) TimerEvent: {}
+[1.008910] (-) TimerEvent: {}
+[1.010587] (encoder_pkg) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[1.073278] (encoder_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.109252] (-) TimerEvent: {}
+[1.210679] (-) TimerEvent: {}
+[1.312254] (-) TimerEvent: {}
+[1.413594] (-) TimerEvent: {}
+[1.514790] (-) TimerEvent: {}
+[1.535918] (encoder_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.564576] (encoder_pkg) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.566934] (encoder_pkg) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.570239] (encoder_pkg) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.588895] (encoder_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.614956] (-) TimerEvent: {}
+[1.715880] (-) TimerEvent: {}
+[1.817120] (-) TimerEvent: {}
+[1.918426] (-) TimerEvent: {}
+[2.008814] (encoder_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.018552] (-) TimerEvent: {}
+[2.036695] (encoder_pkg) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.037964] (encoder_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.039781] (encoder_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.073079] (encoder_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.118749] (-) TimerEvent: {}
+[2.219732] (-) TimerEvent: {}
+[2.321050] (-) TimerEvent: {}
+[2.422030] (-) TimerEvent: {}
+[2.523805] (-) TimerEvent: {}
+[2.625869] (-) TimerEvent: {}
+[2.727582] (-) TimerEvent: {}
+[2.828992] (-) TimerEvent: {}
+[2.930601] (-) TimerEvent: {}
+[3.031859] (-) TimerEvent: {}
+[3.133234] (-) TimerEvent: {}
+[3.234320] (-) TimerEvent: {}
+[3.243788] (encoder_pkg) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter \n'}
+[3.334675] (-) TimerEvent: {}
+[3.435706] (-) TimerEvent: {}
+[3.536614] (-) TimerEvent: {}
+[3.637481] (-) TimerEvent: {}
+[3.738413] (-) TimerEvent: {}
+[3.839151] (-) TimerEvent: {}
+[3.939944] (-) TimerEvent: {}
+[3.988920] (encoder_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.4 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[4.040227] (-) TimerEvent: {}
+[4.141177] (-) TimerEvent: {}
+[4.241990] (-) TimerEvent: {}
+[4.342720] (-) TimerEvent: {}
+[4.443648] (-) TimerEvent: {}
+[4.447350] (encoder_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[4.503613] (encoder_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[4.543749] (-) TimerEvent: {}
+[4.584341] (encoder_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[4.643948] (-) TimerEvent: {}
+[4.691651] (encoder_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.744154] (-) TimerEvent: {}
+[4.836204] (encoder_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.844301] (-) TimerEvent: {}
+[4.945006] (-) TimerEvent: {}
+[5.045755] (-) TimerEvent: {}
+[5.146570] (-) TimerEvent: {}
+[5.247441] (-) TimerEvent: {}
+[5.315821] (encoder_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[5.346856] (encoder_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[5.347561] (-) TimerEvent: {}
+[5.448252] (-) TimerEvent: {}
+[5.549095] (-) TimerEvent: {}
+[5.649840] (-) TimerEvent: {}
+[5.750641] (-) TimerEvent: {}
+[5.851504] (-) TimerEvent: {}
+[5.952691] (-) TimerEvent: {}
+[6.053697] (-) TimerEvent: {}
+[6.073936] (encoder_pkg) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[6.153845] (-) TimerEvent: {}
+[6.254608] (-) TimerEvent: {}
+[6.342863] (encoder_pkg) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[6.354755] (-) TimerEvent: {}
+[6.455541] (-) TimerEvent: {}
+[6.556452] (-) TimerEvent: {}
+[6.657250] (-) TimerEvent: {}
+[6.758054] (-) TimerEvent: {}
+[6.789971] (encoder_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[6.858231] (-) TimerEvent: {}
+[6.887756] (encoder_pkg) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[6.958603] (-) TimerEvent: {}
+[7.059702] (-) TimerEvent: {}
+[7.160476] (-) TimerEvent: {}
+[7.261476] (encoder_pkg) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[7.262719] (-) TimerEvent: {}
+[7.264522] (encoder_pkg) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[7.362994] (-) TimerEvent: {}
+[7.464584] (-) TimerEvent: {}
+[7.565901] (-) TimerEvent: {}
+[7.667922] (-) TimerEvent: {}
+[7.693887] (encoder_pkg) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[7.698814] (encoder_pkg) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[7.768261] (-) TimerEvent: {}
+[7.869399] (-) TimerEvent: {}
+[7.971182] (-) TimerEvent: {}
+[8.072613] (-) TimerEvent: {}
+[8.174120] (-) TimerEvent: {}
+[8.275066] (-) TimerEvent: {}
+[8.376625] (-) TimerEvent: {}
+[8.477455] (-) TimerEvent: {}
+[8.578273] (-) TimerEvent: {}
+[8.679159] (-) TimerEvent: {}
+[8.779945] (-) TimerEvent: {}
+[8.880792] (-) TimerEvent: {}
+[8.981584] (-) TimerEvent: {}
+[8.992571] (encoder_pkg) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.6 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[9.081981] (-) TimerEvent: {}
+[9.183554] (-) TimerEvent: {}
+[9.284449] (-) TimerEvent: {}
+[9.385718] (-) TimerEvent: {}
+[9.486459] (-) TimerEvent: {}
+[9.587193] (-) TimerEvent: {}
+[9.615061] (encoder_pkg) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[9.616027] (encoder_pkg) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[9.616601] (encoder_pkg) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[9.630512] (encoder_pkg) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[9.657125] (encoder_pkg) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[9.672517] (encoder_pkg) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[9.687397] (-) TimerEvent: {}
+[9.765012] (encoder_pkg) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[9.765757] (encoder_pkg) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[9.780249] (encoder_pkg) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[9.787551] (-) TimerEvent: {}
+[9.789406] (encoder_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[9.848997] (encoder_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[9.856798] (encoder_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/hcappel1/ros2_ws/src/encoder_pkg/build/encoder_pkg\n'}
+[9.887829] (-) TimerEvent: {}
+[9.896667] (encoder_pkg) CommandEnded: {'returncode': 0}
+[9.898682] (encoder_pkg) JobProgress: {'identifier': 'encoder_pkg', 'progress': 'build'}
+[9.901386] (encoder_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hcappel1/ros2_ws/src/encoder_pkg/build/encoder_pkg', '--', '-j4', '-l4'], 'cwd': '/home/hcappel1/ros2_ws/src/encoder_pkg/build/encoder_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hcappel1'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/hcappel1'), ('OLDPWD', '/home/hcappel1/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1578'), ('SYSTEMD_EXEC_PID', '1809'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4325'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/hcappel1/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hcappel1'), ('JOURNAL_STREAM', '8:27671'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hcappel1'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/henry-pi:@/tmp/.ICE-unix/1741,unix/henry-pi:/tmp/.ICE-unix/1741'), ('INVOCATION_ID', 'ce95da3047f74caebeabcc7b4c12c7bc'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.YILR81'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hcappel1/ros2_ws/install/motor_control:/home/hcappel1/ros2_ws/install/encoder_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:0b73d5af-779a-48ad-9dfb-46de81fb324f'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hcappel1/ros2_ws/src/encoder_pkg/build/encoder_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hcappel1/ros2_ws/install/motor_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hcappel1/ros2_ws/install/encoder_pkg:/home/hcappel1/ros2_ws/install/motor_control:/opt/ros/humble')]), 'shell': False}
+[9.988060] (-) TimerEvent: {}
+[10.089191] (-) TimerEvent: {}
+[10.155525] (encoder_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/encoders_node.dir/src/encoders.cpp.o\x1b[0m\n'}
+[10.189436] (-) TimerEvent: {}
+[10.290625] (-) TimerEvent: {}
+[10.391623] (-) TimerEvent: {}
+[10.492823] (-) TimerEvent: {}
+[10.593956] (-) TimerEvent: {}
+[10.694847] (-) TimerEvent: {}
+[10.796027] (-) TimerEvent: {}
+[10.897450] (-) TimerEvent: {}
+[10.998666] (-) TimerEvent: {}
+[11.099722] (-) TimerEvent: {}
+[11.200595] (-) TimerEvent: {}
+[11.301499] (-) TimerEvent: {}
+[11.402591] (-) TimerEvent: {}
+[11.503466] (-) TimerEvent: {}
+[11.604367] (-) TimerEvent: {}
+[11.705085] (-) TimerEvent: {}
+[11.805858] (-) TimerEvent: {}
+[11.906681] (-) TimerEvent: {}
+[12.007509] (-) TimerEvent: {}
+[12.108470] (-) TimerEvent: {}
+[12.209959] (-) TimerEvent: {}
+[12.311226] (-) TimerEvent: {}
+[12.412114] (-) TimerEvent: {}
+[12.513104] (-) TimerEvent: {}
+[12.613946] (-) TimerEvent: {}
+[12.714843] (-) TimerEvent: {}
+[12.816616] (-) TimerEvent: {}
+[12.917612] (-) TimerEvent: {}
+[13.018759] (-) TimerEvent: {}
+[13.119940] (-) TimerEvent: {}
+[13.221440] (-) TimerEvent: {}
+[13.322447] (-) TimerEvent: {}
+[13.423618] (-) TimerEvent: {}
+[13.524646] (-) TimerEvent: {}
+[13.625510] (-) TimerEvent: {}
+[13.726346] (-) TimerEvent: {}
+[13.827227] (-) TimerEvent: {}
+[13.928039] (-) TimerEvent: {}
+[14.028920] (-) TimerEvent: {}
+[14.129743] (-) TimerEvent: {}
+[14.230777] (-) TimerEvent: {}
+[14.332059] (-) TimerEvent: {}
+[14.432998] (-) TimerEvent: {}
+[14.534149] (-) TimerEvent: {}
+[14.635492] (-) TimerEvent: {}
+[14.736477] (-) TimerEvent: {}
+[14.837802] (-) TimerEvent: {}
+[14.938940] (-) TimerEvent: {}
+[15.039803] (-) TimerEvent: {}
+[15.140786] (-) TimerEvent: {}
+[15.242291] (-) TimerEvent: {}
+[15.343268] (-) TimerEvent: {}
+[15.444271] (-) TimerEvent: {}
+[15.545141] (-) TimerEvent: {}
+[15.645992] (-) TimerEvent: {}
+[15.746883] (-) TimerEvent: {}
+[15.847775] (-) TimerEvent: {}
+[15.948680] (-) TimerEvent: {}
+[16.049744] (-) TimerEvent: {}
+[16.150567] (-) TimerEvent: {}
+[16.251688] (-) TimerEvent: {}
+[16.353117] (-) TimerEvent: {}
+[16.454048] (-) TimerEvent: {}
+[16.555178] (-) TimerEvent: {}
+[16.656045] (-) TimerEvent: {}
+[16.756931] (-) TimerEvent: {}
+[16.857825] (-) TimerEvent: {}
+[16.958736] (-) TimerEvent: {}
+[17.059589] (-) TimerEvent: {}
+[17.160456] (-) TimerEvent: {}
+[17.261666] (-) TimerEvent: {}
+[17.362674] (-) TimerEvent: {}
+[17.463563] (-) TimerEvent: {}
+[17.564425] (-) TimerEvent: {}
+[17.665368] (-) TimerEvent: {}
+[17.766486] (-) TimerEvent: {}
+[17.868019] (-) TimerEvent: {}
+[17.969005] (-) TimerEvent: {}
+[18.070227] (-) TimerEvent: {}
+[18.171237] (-) TimerEvent: {}
+[18.272383] (-) TimerEvent: {}
+[18.373266] (-) TimerEvent: {}
+[18.474298] (-) TimerEvent: {}
+[18.575281] (-) TimerEvent: {}
+[18.676169] (-) TimerEvent: {}
+[18.777052] (-) TimerEvent: {}
+[18.877958] (-) TimerEvent: {}
+[18.978790] (-) TimerEvent: {}
+[19.079625] (-) TimerEvent: {}
+[19.180511] (-) TimerEvent: {}
+[19.281594] (-) TimerEvent: {}
+[19.382540] (-) TimerEvent: {}
+[19.483399] (-) TimerEvent: {}
+[19.584770] (-) TimerEvent: {}
+[19.686085] (-) TimerEvent: {}
+[19.787227] (-) TimerEvent: {}
+[19.888395] (-) TimerEvent: {}
+[19.989304] (-) TimerEvent: {}
+[20.090261] (-) TimerEvent: {}
+[20.191277] (-) TimerEvent: {}
+[20.292468] (-) TimerEvent: {}
+[20.393431] (-) TimerEvent: {}
+[20.494366] (-) TimerEvent: {}
+[20.595247] (-) TimerEvent: {}
+[20.696085] (-) TimerEvent: {}
+[20.796960] (-) TimerEvent: {}
+[20.897811] (-) TimerEvent: {}
+[20.998695] (-) TimerEvent: {}
+[21.099673] (-) TimerEvent: {}
+[21.201335] (-) TimerEvent: {}
+[21.302703] (-) TimerEvent: {}
+[21.322920] (encoder_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:19:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kshared_ptr\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KSharedPtr\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[21.324442] (encoder_pkg) StderrLine: {'line': b'   19 |         \x1b[01;31m\x1b[Kshared_ptr\x1b[m\x1b[K<float> m1_ang_vel_ = 0.0;\n'}
+[21.325295] (encoder_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[21.326136] (encoder_pkg) StderrLine: {'line': b'      |         \x1b[32m\x1b[KSharedPtr\x1b[m\x1b[K\n'}
+[21.329665] (encoder_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:20:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kshared_ptr\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KSharedPtr\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[21.330579] (encoder_pkg) StderrLine: {'line': b'   20 |         \x1b[01;31m\x1b[Kshared_ptr\x1b[m\x1b[K<float> m1_ang_vel_filtered_ = 0.0;\n'}
+[21.331421] (encoder_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[21.332091] (encoder_pkg) StderrLine: {'line': b'      |         \x1b[32m\x1b[KSharedPtr\x1b[m\x1b[K\n'}
+[21.336747] (encoder_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:96:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kshared_ptr\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KSharedPtr\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[21.337593] (encoder_pkg) StderrLine: {'line': b'   96 |         \x1b[01;31m\x1b[Kshared_ptr\x1b[m\x1b[K<float> LowPassFilter(shared_ptr<float> ang_vel) {\n'}
+[21.338278] (encoder_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[21.338972] (encoder_pkg) StderrLine: {'line': b'      |         \x1b[32m\x1b[KSharedPtr\x1b[m\x1b[K\n'}
+[21.403055] (-) TimerEvent: {}
+[21.447490] (encoder_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid EncoderTrigger::encoder1Callback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[21.448274] (encoder_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:46:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Km1_ang_vel_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[21.449072] (encoder_pkg) StderrLine: {'line': b'   46 |                                         \x1b[01;31m\x1b[Km1_ang_vel_\x1b[m\x1b[K = 1/m1_time_diff_secs_*M_PI/20;\n'}
+[21.449884] (encoder_pkg) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[21.477887] (encoder_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:60:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Km1_ang_vel_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[21.478662] (encoder_pkg) StderrLine: {'line': b'   60 |                                         \x1b[01;31m\x1b[Km1_ang_vel_\x1b[m\x1b[K = 1/m1_time_diff_secs_*M_PI/20;\n'}
+[21.479386] (encoder_pkg) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[21.503267] (-) TimerEvent: {}
+[21.512873] (encoder_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid EncoderTrigger::encoder1Callbacknew()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[21.513886] (encoder_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:91:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Km1_ang_vel_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[21.514581] (encoder_pkg) StderrLine: {'line': b'   91 |                 \x1b[01;31m\x1b[Km1_ang_vel_\x1b[m\x1b[K = (1/m1_time_diff_secs_)*(M_PI/20);\n'}
+[21.515482] (encoder_pkg) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[21.561215] (encoder_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:92:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Km1_ang_vel_filtered_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[21.562228] (encoder_pkg) StderrLine: {'line': b'   92 |                 \x1b[01;31m\x1b[Km1_ang_vel_filtered_\x1b[m\x1b[K = LowPassFilter(&m1_ang_vel_);\n'}
+[21.562802] (encoder_pkg) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[21.588880] (encoder_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:92:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KLowPassFilter\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[21.589707] (encoder_pkg) StderrLine: {'line': b'   92 |                 m1_ang_vel_filtered_ = \x1b[01;31m\x1b[KLowPassFilter\x1b[m\x1b[K(&m1_ang_vel_);\n'}
+[21.590374] (encoder_pkg) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[21.603449] (-) TimerEvent: {}
+[21.617985] (encoder_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid EncoderTrigger::publisherCallback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[21.618814] (encoder_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:102:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Km1_ang_vel_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[21.619608] (encoder_pkg) StderrLine: {'line': b'  102 |                 message.data = \x1b[01;31m\x1b[Km1_ang_vel_\x1b[m\x1b[K;\n'}
+[21.620286] (encoder_pkg) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[21.703694] (-) TimerEvent: {}
+[21.804511] (-) TimerEvent: {}
+[21.905434] (-) TimerEvent: {}
+[22.006320] (-) TimerEvent: {}
+[22.107246] (-) TimerEvent: {}
+[22.208139] (-) TimerEvent: {}
+[22.309322] (-) TimerEvent: {}
+[22.410427] (-) TimerEvent: {}
+[22.511292] (-) TimerEvent: {}
+[22.612164] (-) TimerEvent: {}
+[22.712999] (-) TimerEvent: {}
+[22.813829] (-) TimerEvent: {}
+[22.914774] (-) TimerEvent: {}
+[23.015731] (-) TimerEvent: {}
+[23.116566] (-) TimerEvent: {}
+[23.217777] (-) TimerEvent: {}
+[23.319129] (-) TimerEvent: {}
+[23.420422] (-) TimerEvent: {}
+[23.521636] (-) TimerEvent: {}
+[23.622660] (-) TimerEvent: {}
+[23.723500] (-) TimerEvent: {}
+[23.824365] (-) TimerEvent: {}
+[23.925251] (-) TimerEvent: {}
+[24.026136] (-) TimerEvent: {}
+[24.127027] (-) TimerEvent: {}
+[24.228101] (-) TimerEvent: {}
+[24.329143] (-) TimerEvent: {}
+[24.430081] (-) TimerEvent: {}
+[24.531237] (-) TimerEvent: {}
+[24.632236] (-) TimerEvent: {}
+[24.733586] (-) TimerEvent: {}
+[24.834846] (-) TimerEvent: {}
+[24.936140] (-) TimerEvent: {}
+[25.037515] (-) TimerEvent: {}
+[25.072383] (encoder_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/encoders_node.dir/build.make:76: CMakeFiles/encoders_node.dir/src/encoders.cpp.o] Error 1\n'}
+[25.073509] (encoder_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoders_node.dir/all] Error 2\n'}
+[25.074523] (encoder_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[25.083978] (encoder_pkg) CommandEnded: {'returncode': 2}
+[25.137991] (-) TimerEvent: {}
+[25.238968] (-) TimerEvent: {}
+[25.314639] (encoder_pkg) JobEnded: {'identifier': 'encoder_pkg', 'rc': 2}
+[25.327608] (-) EventReactorShutdown: {}

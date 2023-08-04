@@ -1,0 +1,84 @@
+[0.062s] Invoking command in '/home/hcappel1/ros2_ws/src/encoder_pkg/build/encoder_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hcappel1/ros2_ws/install/motor_control:/opt/ros/humble /usr/bin/cmake /home/hcappel1/ros2_ws/src/encoder_pkg -DCMAKE_INSTALL_PREFIX=/home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg
+[0.647s] -- The C compiler identification is GNU 11.3.0
+[1.007s] -- The CXX compiler identification is GNU 11.3.0
+[1.070s] -- Detecting C compiler ABI info
+[1.532s] -- Detecting C compiler ABI info - done
+[1.561s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.563s] -- Detecting C compile features
+[1.567s] -- Detecting C compile features - done
+[1.585s] -- Detecting CXX compiler ABI info
+[2.005s] -- Detecting CXX compiler ABI info - done
+[2.033s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.034s] -- Detecting CXX compile features
+[2.036s] -- Detecting CXX compile features - done
+[2.069s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.241s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+[3.985s] -- Found rclcpp: 16.0.4 (/opt/ros/humble/share/rclcpp/cmake)
+[4.444s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[4.500s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[4.581s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[4.688s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.832s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.312s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[5.343s] -- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[6.070s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[6.339s] -- Found FastRTPS: /opt/ros/humble/include  
+[6.786s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[6.884s] -- Looking for pthread.h
+[7.258s] -- Looking for pthread.h - found
+[7.261s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[7.690s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[7.695s] -- Found Threads: TRUE  
+[8.989s] -- Found ament_lint_auto: 0.12.6 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[9.611s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[9.612s] -- Configured cppcheck include dirs: 
+[9.613s] -- Configured cppcheck exclude dirs and/or files: 
+[9.627s] -- Added test 'flake8' to check Python code syntax and style conventions
+[9.653s] -- Added test 'lint_cmake' to check CMake code style
+[9.669s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[9.761s] -- Added test 'uncrustify' to check C / C++ code style
+[9.762s] -- Configured uncrustify additional arguments: 
+[9.776s] -- Added test 'xmllint' to check XML markup files
+[9.785s] -- Configuring done
+[9.845s] -- Generating done
+[9.853s] -- Build files have been written to: /home/hcappel1/ros2_ws/src/encoder_pkg/build/encoder_pkg
+[9.893s] Invoked command in '/home/hcappel1/ros2_ws/src/encoder_pkg/build/encoder_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hcappel1/ros2_ws/install/motor_control:/opt/ros/humble /usr/bin/cmake /home/hcappel1/ros2_ws/src/encoder_pkg -DCMAKE_INSTALL_PREFIX=/home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg
+[9.903s] Invoking command in '/home/hcappel1/ros2_ws/src/encoder_pkg/build/encoder_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hcappel1/ros2_ws/install/motor_control:/opt/ros/humble /usr/bin/cmake --build /home/hcappel1/ros2_ws/src/encoder_pkg/build/encoder_pkg -- -j4 -l4
+[10.152s] [ 50%] [32mBuilding CXX object CMakeFiles/encoders_node.dir/src/encoders.cpp.o[0m
+[21.320s] [01m[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:19:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kshared_ptr[m[K’ does not name a type; did you mean ‘[01m[KSharedPtr[m[K’?
+[21.321s]    19 |         [01;31m[Kshared_ptr[m[K<float> m1_ang_vel_ = 0.0;
+[21.322s]       |         [01;31m[K^~~~~~~~~~[m[K
+[21.322s]       |         [32m[KSharedPtr[m[K
+[21.326s] [01m[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:20:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kshared_ptr[m[K’ does not name a type; did you mean ‘[01m[KSharedPtr[m[K’?
+[21.327s]    20 |         [01;31m[Kshared_ptr[m[K<float> m1_ang_vel_filtered_ = 0.0;
+[21.328s]       |         [01;31m[K^~~~~~~~~~[m[K
+[21.328s]       |         [32m[KSharedPtr[m[K
+[21.333s] [01m[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:96:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kshared_ptr[m[K’ does not name a type; did you mean ‘[01m[KSharedPtr[m[K’?
+[21.334s]    96 |         [01;31m[Kshared_ptr[m[K<float> LowPassFilter(shared_ptr<float> ang_vel) {
+[21.334s]       |         [01;31m[K^~~~~~~~~~[m[K
+[21.335s]       |         [32m[KSharedPtr[m[K
+[21.444s] [01m[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:[m[K In member function ‘[01m[Kvoid EncoderTrigger::encoder1Callback()[m[K’:
+[21.444s] [01m[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:46:41:[m[K [01;31m[Kerror: [m[K‘[01m[Km1_ang_vel_[m[K’ was not declared in this scope
+[21.445s]    46 |                                         [01;31m[Km1_ang_vel_[m[K = 1/m1_time_diff_secs_*M_PI/20;
+[21.447s]       |                                         [01;31m[K^~~~~~~~~~~[m[K
+[21.474s] [01m[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:60:41:[m[K [01;31m[Kerror: [m[K‘[01m[Km1_ang_vel_[m[K’ was not declared in this scope
+[21.475s]    60 |                                         [01;31m[Km1_ang_vel_[m[K = 1/m1_time_diff_secs_*M_PI/20;
+[21.475s]       |                                         [01;31m[K^~~~~~~~~~~[m[K
+[21.509s] [01m[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:[m[K In member function ‘[01m[Kvoid EncoderTrigger::encoder1Callbacknew()[m[K’:
+[21.510s] [01m[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:91:17:[m[K [01;31m[Kerror: [m[K‘[01m[Km1_ang_vel_[m[K’ was not declared in this scope
+[21.511s]    91 |                 [01;31m[Km1_ang_vel_[m[K = (1/m1_time_diff_secs_)*(M_PI/20);
+[21.512s]       |                 [01;31m[K^~~~~~~~~~~[m[K
+[21.558s] [01m[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:92:17:[m[K [01;31m[Kerror: [m[K‘[01m[Km1_ang_vel_filtered_[m[K’ was not declared in this scope
+[21.558s]    92 |                 [01;31m[Km1_ang_vel_filtered_[m[K = LowPassFilter(&m1_ang_vel_);
+[21.559s]       |                 [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[21.585s] [01m[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:92:40:[m[K [01;31m[Kerror: [m[K‘[01m[KLowPassFilter[m[K’ was not declared in this scope
+[21.586s]    92 |                 m1_ang_vel_filtered_ = [01;31m[KLowPassFilter[m[K(&m1_ang_vel_);
+[21.586s]       |                                        [01;31m[K^~~~~~~~~~~~~[m[K
+[21.614s] [01m[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:[m[K In member function ‘[01m[Kvoid EncoderTrigger::publisherCallback()[m[K’:
+[21.615s] [01m[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:102:32:[m[K [01;31m[Kerror: [m[K‘[01m[Km1_ang_vel_[m[K’ was not declared in this scope
+[21.616s]   102 |                 message.data = [01;31m[Km1_ang_vel_[m[K;
+[21.616s]       |                                [01;31m[K^~~~~~~~~~~[m[K
+[25.069s] gmake[2]: *** [CMakeFiles/encoders_node.dir/build.make:76: CMakeFiles/encoders_node.dir/src/encoders.cpp.o] Error 1
+[25.070s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoders_node.dir/all] Error 2
+[25.071s] gmake: *** [Makefile:146: all] Error 2
+[25.081s] Invoked command in '/home/hcappel1/ros2_ws/src/encoder_pkg/build/encoder_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hcappel1/ros2_ws/install/motor_control:/opt/ros/humble /usr/bin/cmake --build /home/hcappel1/ros2_ws/src/encoder_pkg/build/encoder_pkg -- -j4 -l4

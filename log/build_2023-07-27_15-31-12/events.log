@@ -1,0 +1,267 @@
+[0.000000] (-) TimerEvent: {}
+[0.001503] (encoder_pkg) JobQueued: {'identifier': 'encoder_pkg', 'dependencies': OrderedDict()}
+[0.002233] (encoder_pkg) JobStarted: {'identifier': 'encoder_pkg'}
+[0.058995] (encoder_pkg) JobProgress: {'identifier': 'encoder_pkg', 'progress': 'cmake'}
+[0.062687] (encoder_pkg) JobProgress: {'identifier': 'encoder_pkg', 'progress': 'build'}
+[0.066752] (encoder_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hcappel1/ros2_ws/src/encoder_pkg/build/encoder_pkg', '--', '-j4', '-l4'], 'cwd': '/home/hcappel1/ros2_ws/src/encoder_pkg/build/encoder_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hcappel1'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/hcappel1'), ('OLDPWD', '/home/hcappel1/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1578'), ('SYSTEMD_EXEC_PID', '1809'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4325'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/hcappel1/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hcappel1'), ('JOURNAL_STREAM', '8:27671'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hcappel1'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/henry-pi:@/tmp/.ICE-unix/1741,unix/henry-pi:/tmp/.ICE-unix/1741'), ('INVOCATION_ID', 'ce95da3047f74caebeabcc7b4c12c7bc'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.YILR81'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hcappel1/ros2_ws/install/motor_control:/home/hcappel1/ros2_ws/install/encoder_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:0b73d5af-779a-48ad-9dfb-46de81fb324f'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hcappel1/ros2_ws/src/encoder_pkg/build/encoder_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hcappel1/ros2_ws/install/motor_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hcappel1/ros2_ws/install/encoder_pkg:/home/hcappel1/ros2_ws/install/motor_control:/opt/ros/humble')]), 'shell': False}
+[0.099066] (-) TimerEvent: {}
+[0.199931] (-) TimerEvent: {}
+[0.265050] (encoder_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target encoders_node\x1b[0m\n'}
+[0.300842] (-) TimerEvent: {}
+[0.370181] (encoder_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/encoders_node.dir/src/encoders.cpp.o\x1b[0m\n'}
+[0.401265] (-) TimerEvent: {}
+[0.502350] (-) TimerEvent: {}
+[0.603450] (-) TimerEvent: {}
+[0.704387] (-) TimerEvent: {}
+[0.805298] (-) TimerEvent: {}
+[0.906488] (-) TimerEvent: {}
+[1.007373] (-) TimerEvent: {}
+[1.108446] (-) TimerEvent: {}
+[1.209185] (-) TimerEvent: {}
+[1.309931] (-) TimerEvent: {}
+[1.410683] (-) TimerEvent: {}
+[1.511509] (-) TimerEvent: {}
+[1.612239] (-) TimerEvent: {}
+[1.713024] (-) TimerEvent: {}
+[1.814219] (-) TimerEvent: {}
+[1.915224] (-) TimerEvent: {}
+[2.016288] (-) TimerEvent: {}
+[2.117683] (-) TimerEvent: {}
+[2.219100] (-) TimerEvent: {}
+[2.320436] (-) TimerEvent: {}
+[2.421298] (-) TimerEvent: {}
+[2.522292] (-) TimerEvent: {}
+[2.623260] (-) TimerEvent: {}
+[2.724239] (-) TimerEvent: {}
+[2.825067] (-) TimerEvent: {}
+[2.925939] (-) TimerEvent: {}
+[3.027026] (-) TimerEvent: {}
+[3.127982] (-) TimerEvent: {}
+[3.228975] (-) TimerEvent: {}
+[3.329888] (-) TimerEvent: {}
+[3.430877] (-) TimerEvent: {}
+[3.532343] (-) TimerEvent: {}
+[3.633314] (-) TimerEvent: {}
+[3.734458] (-) TimerEvent: {}
+[3.835393] (-) TimerEvent: {}
+[3.936476] (-) TimerEvent: {}
+[4.038072] (-) TimerEvent: {}
+[4.139492] (-) TimerEvent: {}
+[4.240426] (-) TimerEvent: {}
+[4.341379] (-) TimerEvent: {}
+[4.442213] (-) TimerEvent: {}
+[4.543078] (-) TimerEvent: {}
+[4.643989] (-) TimerEvent: {}
+[4.744830] (-) TimerEvent: {}
+[4.845926] (-) TimerEvent: {}
+[4.947279] (-) TimerEvent: {}
+[5.048201] (-) TimerEvent: {}
+[5.149096] (-) TimerEvent: {}
+[5.250092] (-) TimerEvent: {}
+[5.351130] (-) TimerEvent: {}
+[5.452010] (-) TimerEvent: {}
+[5.552846] (-) TimerEvent: {}
+[5.653682] (-) TimerEvent: {}
+[5.754588] (-) TimerEvent: {}
+[5.855497] (-) TimerEvent: {}
+[5.956544] (-) TimerEvent: {}
+[6.057355] (-) TimerEvent: {}
+[6.158223] (-) TimerEvent: {}
+[6.259122] (-) TimerEvent: {}
+[6.359996] (-) TimerEvent: {}
+[6.460853] (-) TimerEvent: {}
+[6.561694] (-) TimerEvent: {}
+[6.662596] (-) TimerEvent: {}
+[6.763556] (-) TimerEvent: {}
+[6.864393] (-) TimerEvent: {}
+[6.965298] (-) TimerEvent: {}
+[7.066222] (-) TimerEvent: {}
+[7.167341] (-) TimerEvent: {}
+[7.268342] (-) TimerEvent: {}
+[7.369560] (-) TimerEvent: {}
+[7.470453] (-) TimerEvent: {}
+[7.571646] (-) TimerEvent: {}
+[7.672593] (-) TimerEvent: {}
+[7.773423] (-) TimerEvent: {}
+[7.874286] (-) TimerEvent: {}
+[7.975152] (-) TimerEvent: {}
+[8.075984] (-) TimerEvent: {}
+[8.176879] (-) TimerEvent: {}
+[8.277764] (-) TimerEvent: {}
+[8.378730] (-) TimerEvent: {}
+[8.479698] (-) TimerEvent: {}
+[8.580751] (-) TimerEvent: {}
+[8.681953] (-) TimerEvent: {}
+[8.783306] (-) TimerEvent: {}
+[8.884543] (-) TimerEvent: {}
+[8.985690] (-) TimerEvent: {}
+[9.086712] (-) TimerEvent: {}
+[9.187851] (-) TimerEvent: {}
+[9.288738] (-) TimerEvent: {}
+[9.389619] (-) TimerEvent: {}
+[9.490489] (-) TimerEvent: {}
+[9.591535] (-) TimerEvent: {}
+[9.692459] (-) TimerEvent: {}
+[9.793343] (-) TimerEvent: {}
+[9.894192] (-) TimerEvent: {}
+[9.995079] (-) TimerEvent: {}
+[10.096046] (-) TimerEvent: {}
+[10.196991] (-) TimerEvent: {}
+[10.298409] (-) TimerEvent: {}
+[10.399530] (-) TimerEvent: {}
+[10.500833] (-) TimerEvent: {}
+[10.602113] (-) TimerEvent: {}
+[10.703311] (-) TimerEvent: {}
+[10.804267] (-) TimerEvent: {}
+[10.905115] (-) TimerEvent: {}
+[11.008630] (-) TimerEvent: {}
+[11.109487] (-) TimerEvent: {}
+[11.210326] (-) TimerEvent: {}
+[11.311165] (-) TimerEvent: {}
+[11.412013] (-) TimerEvent: {}
+[11.512945] (-) TimerEvent: {}
+[11.614357] (-) TimerEvent: {}
+[11.705362] (encoder_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kfloat EncoderTrigger::LowPassFilter(float)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.706717] (encoder_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:98:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kno return statement in function returning non-void [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type\x07-Wreturn-type\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.707492] (encoder_pkg) StderrLine: {'line': b'   98 |         \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[11.707979] (encoder_pkg) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[11.708423] (encoder_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:96:35:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kang_vel\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.708876] (encoder_pkg) StderrLine: {'line': b'   96 |         float LowPassFilter(\x1b[01;35m\x1b[Kfloat ang_vel\x1b[m\x1b[K) {\n'}
+[11.709382] (encoder_pkg) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[11.714562] (-) TimerEvent: {}
+[11.816387] (-) TimerEvent: {}
+[11.917405] (-) TimerEvent: {}
+[12.018319] (-) TimerEvent: {}
+[12.119442] (-) TimerEvent: {}
+[12.220639] (-) TimerEvent: {}
+[12.321735] (-) TimerEvent: {}
+[12.422909] (-) TimerEvent: {}
+[12.523762] (-) TimerEvent: {}
+[12.624922] (-) TimerEvent: {}
+[12.725739] (-) TimerEvent: {}
+[12.826604] (-) TimerEvent: {}
+[12.927480] (-) TimerEvent: {}
+[13.028361] (-) TimerEvent: {}
+[13.129341] (-) TimerEvent: {}
+[13.230292] (-) TimerEvent: {}
+[13.331544] (-) TimerEvent: {}
+[13.432626] (-) TimerEvent: {}
+[13.533834] (-) TimerEvent: {}
+[13.635067] (-) TimerEvent: {}
+[13.736179] (-) TimerEvent: {}
+[13.837304] (-) TimerEvent: {}
+[13.938081] (-) TimerEvent: {}
+[14.038953] (-) TimerEvent: {}
+[14.139800] (-) TimerEvent: {}
+[14.240629] (-) TimerEvent: {}
+[14.341512] (-) TimerEvent: {}
+[14.442341] (-) TimerEvent: {}
+[14.543245] (-) TimerEvent: {}
+[14.644070] (-) TimerEvent: {}
+[14.744968] (-) TimerEvent: {}
+[14.845886] (-) TimerEvent: {}
+[14.946895] (-) TimerEvent: {}
+[15.048197] (-) TimerEvent: {}
+[15.149148] (-) TimerEvent: {}
+[15.250449] (-) TimerEvent: {}
+[15.351732] (-) TimerEvent: {}
+[15.452636] (-) TimerEvent: {}
+[15.553593] (-) TimerEvent: {}
+[15.654894] (-) TimerEvent: {}
+[15.755736] (-) TimerEvent: {}
+[15.856676] (-) TimerEvent: {}
+[15.957544] (-) TimerEvent: {}
+[16.058456] (-) TimerEvent: {}
+[16.159320] (-) TimerEvent: {}
+[16.260210] (-) TimerEvent: {}
+[16.361070] (-) TimerEvent: {}
+[16.462027] (-) TimerEvent: {}
+[16.562917] (-) TimerEvent: {}
+[16.664276] (-) TimerEvent: {}
+[16.765362] (-) TimerEvent: {}
+[16.866671] (-) TimerEvent: {}
+[16.967790] (-) TimerEvent: {}
+[17.068675] (-) TimerEvent: {}
+[17.169480] (-) TimerEvent: {}
+[17.270299] (-) TimerEvent: {}
+[17.371261] (-) TimerEvent: {}
+[17.472092] (-) TimerEvent: {}
+[17.572990] (-) TimerEvent: {}
+[17.673837] (-) TimerEvent: {}
+[17.774677] (-) TimerEvent: {}
+[17.875626] (-) TimerEvent: {}
+[17.976535] (-) TimerEvent: {}
+[18.077406] (-) TimerEvent: {}
+[18.178333] (-) TimerEvent: {}
+[18.279317] (-) TimerEvent: {}
+[18.380714] (-) TimerEvent: {}
+[18.482221] (-) TimerEvent: {}
+[18.583511] (-) TimerEvent: {}
+[18.684728] (-) TimerEvent: {}
+[18.785618] (-) TimerEvent: {}
+[18.886528] (-) TimerEvent: {}
+[18.987412] (-) TimerEvent: {}
+[19.088218] (-) TimerEvent: {}
+[19.189058] (-) TimerEvent: {}
+[19.289886] (-) TimerEvent: {}
+[19.390709] (-) TimerEvent: {}
+[19.491568] (-) TimerEvent: {}
+[19.592728] (-) TimerEvent: {}
+[19.693579] (-) TimerEvent: {}
+[19.794500] (-) TimerEvent: {}
+[19.895695] (-) TimerEvent: {}
+[19.996871] (-) TimerEvent: {}
+[20.098119] (-) TimerEvent: {}
+[20.199166] (-) TimerEvent: {}
+[20.300215] (-) TimerEvent: {}
+[20.401390] (-) TimerEvent: {}
+[20.502650] (-) TimerEvent: {}
+[20.603927] (-) TimerEvent: {}
+[20.705202] (-) TimerEvent: {}
+[20.806851] (-) TimerEvent: {}
+[20.907843] (-) TimerEvent: {}
+[20.917773] (encoder_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable encoders_node\x1b[0m\n'}
+[21.008240] (-) TimerEvent: {}
+[21.109407] (-) TimerEvent: {}
+[21.210864] (-) TimerEvent: {}
+[21.312853] (-) TimerEvent: {}
+[21.414325] (-) TimerEvent: {}
+[21.515843] (-) TimerEvent: {}
+[21.617078] (-) TimerEvent: {}
+[21.718164] (-) TimerEvent: {}
+[21.819486] (-) TimerEvent: {}
+[21.920474] (-) TimerEvent: {}
+[22.021357] (-) TimerEvent: {}
+[22.036566] (encoder_pkg) StdoutLine: {'line': b'[100%] Built target encoders_node\n'}
+[22.079822] (encoder_pkg) CommandEnded: {'returncode': 0}
+[22.121704] (-) TimerEvent: {}
+[22.223058] (-) TimerEvent: {}
+[22.229198] (encoder_pkg) JobProgress: {'identifier': 'encoder_pkg', 'progress': 'install'}
+[22.268726] (encoder_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hcappel1/ros2_ws/src/encoder_pkg/build/encoder_pkg'], 'cwd': '/home/hcappel1/ros2_ws/src/encoder_pkg/build/encoder_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hcappel1'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/hcappel1'), ('OLDPWD', '/home/hcappel1/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1578'), ('SYSTEMD_EXEC_PID', '1809'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4325'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/hcappel1/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hcappel1'), ('JOURNAL_STREAM', '8:27671'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hcappel1'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/henry-pi:@/tmp/.ICE-unix/1741,unix/henry-pi:/tmp/.ICE-unix/1741'), ('INVOCATION_ID', 'ce95da3047f74caebeabcc7b4c12c7bc'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.YILR81'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hcappel1/ros2_ws/install/motor_control:/home/hcappel1/ros2_ws/install/encoder_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:0b73d5af-779a-48ad-9dfb-46de81fb324f'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hcappel1/ros2_ws/src/encoder_pkg/build/encoder_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hcappel1/ros2_ws/install/motor_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hcappel1/ros2_ws/install/encoder_pkg:/home/hcappel1/ros2_ws/install/motor_control:/opt/ros/humble')]), 'shell': False}
+[22.304409] (encoder_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[22.305175] (encoder_pkg) StdoutLine: {'line': b'-- Installing: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/lib/encoder_pkg/encoders_node\n'}
+[22.314915] (encoder_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/lib/encoder_pkg/encoders_node" to ""\n'}
+[22.315602] (encoder_pkg) StdoutLine: {'line': b'-- Installing: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/launch\n'}
+[22.316203] (encoder_pkg) StdoutLine: {'line': b'-- Installing: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/launch/encoders.launch.py\n'}
+[22.317991] (encoder_pkg) StdoutLine: {'line': b'-- Installing: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/ament_index/resource_index/package_run_dependencies/encoder_pkg\n'}
+[22.319675] (encoder_pkg) StdoutLine: {'line': b'-- Installing: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/ament_index/resource_index/parent_prefix_path/encoder_pkg\n'}
+[22.321274] (encoder_pkg) StdoutLine: {'line': b'-- Installing: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/environment/ament_prefix_path.sh\n'}
+[22.322568] (encoder_pkg) StdoutLine: {'line': b'-- Installing: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/environment/ament_prefix_path.dsv\n'}
+[22.323078] (-) TimerEvent: {}
+[22.323884] (encoder_pkg) StdoutLine: {'line': b'-- Installing: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/environment/path.sh\n'}
+[22.325225] (encoder_pkg) StdoutLine: {'line': b'-- Installing: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/environment/path.dsv\n'}
+[22.326622] (encoder_pkg) StdoutLine: {'line': b'-- Installing: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/local_setup.bash\n'}
+[22.327959] (encoder_pkg) StdoutLine: {'line': b'-- Installing: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/local_setup.sh\n'}
+[22.329238] (encoder_pkg) StdoutLine: {'line': b'-- Installing: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/local_setup.zsh\n'}
+[22.330521] (encoder_pkg) StdoutLine: {'line': b'-- Installing: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/local_setup.dsv\n'}
+[22.331752] (encoder_pkg) StdoutLine: {'line': b'-- Installing: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/package.dsv\n'}
+[22.333460] (encoder_pkg) StdoutLine: {'line': b'-- Installing: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/ament_index/resource_index/packages/encoder_pkg\n'}
+[22.335207] (encoder_pkg) StdoutLine: {'line': b'-- Installing: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/cmake/encoder_pkgConfig.cmake\n'}
+[22.336293] (encoder_pkg) StdoutLine: {'line': b'-- Installing: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/cmake/encoder_pkgConfig-version.cmake\n'}
+[22.337477] (encoder_pkg) StdoutLine: {'line': b'-- Installing: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/package.xml\n'}
+[22.343157] (encoder_pkg) CommandEnded: {'returncode': 0}
+[22.423531] (-) TimerEvent: {}
+[22.524787] (-) TimerEvent: {}
+[22.628448] (-) TimerEvent: {}
+[22.643330] (encoder_pkg) JobEnded: {'identifier': 'encoder_pkg', 'rc': 0}
+[22.646341] (-) EventReactorShutdown: {}

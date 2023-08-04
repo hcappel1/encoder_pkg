@@ -1,0 +1,35 @@
+[0.073s] Invoking command in '/home/hcappel1/ros2_ws/src/encoder_pkg/build/encoder_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hcappel1/ros2_ws/install/motor_control:/opt/ros/humble /usr/bin/cmake --build /home/hcappel1/ros2_ws/src/encoder_pkg/build/encoder_pkg -- -j4 -l4
+[0.261s] [35m[1mConsolidate compiler generated dependencies of target encoders_node[0m
+[0.367s] [ 50%] [32mBuilding CXX object CMakeFiles/encoders_node.dir/src/encoders.cpp.o[0m
+[11.702s] [01m[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:[m[K In member function ‘[01m[Kfloat EncoderTrigger::LowPassFilter(float)[m[K’:
+[11.703s] [01m[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:98:9:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[11.703s]    98 |         [01;35m[K}[m[K
+[11.704s]       |         [01;35m[K^[m[K
+[11.704s] [01m[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:96:35:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kang_vel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[11.705s]    96 |         float LowPassFilter([01;35m[Kfloat ang_vel[m[K) {
+[11.705s]       |                             [01;35m[K~~~~~~^~~~~~~[m[K
+[20.914s] [100%] [32m[1mLinking CXX executable encoders_node[0m
+[22.033s] [100%] Built target encoders_node
+[22.076s] Invoked command in '/home/hcappel1/ros2_ws/src/encoder_pkg/build/encoder_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hcappel1/ros2_ws/install/motor_control:/opt/ros/humble /usr/bin/cmake --build /home/hcappel1/ros2_ws/src/encoder_pkg/build/encoder_pkg -- -j4 -l4
+[22.271s] Invoking command in '/home/hcappel1/ros2_ws/src/encoder_pkg/build/encoder_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hcappel1/ros2_ws/install/motor_control:/opt/ros/humble /usr/bin/cmake --install /home/hcappel1/ros2_ws/src/encoder_pkg/build/encoder_pkg
+[22.301s] -- Install configuration: ""
+[22.301s] -- Installing: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/lib/encoder_pkg/encoders_node
+[22.311s] -- Set runtime path of "/home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/lib/encoder_pkg/encoders_node" to ""
+[22.312s] -- Installing: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/launch
+[22.312s] -- Installing: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/launch/encoders.launch.py
+[22.314s] -- Installing: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/ament_index/resource_index/package_run_dependencies/encoder_pkg
+[22.316s] -- Installing: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/ament_index/resource_index/parent_prefix_path/encoder_pkg
+[22.317s] -- Installing: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/environment/ament_prefix_path.sh
+[22.319s] -- Installing: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/environment/ament_prefix_path.dsv
+[22.320s] -- Installing: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/environment/path.sh
+[22.321s] -- Installing: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/environment/path.dsv
+[22.323s] -- Installing: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/local_setup.bash
+[22.324s] -- Installing: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/local_setup.sh
+[22.325s] -- Installing: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/local_setup.zsh
+[22.326s] -- Installing: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/local_setup.dsv
+[22.328s] -- Installing: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/package.dsv
+[22.329s] -- Installing: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/ament_index/resource_index/packages/encoder_pkg
+[22.331s] -- Installing: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/cmake/encoder_pkgConfig.cmake
+[22.332s] -- Installing: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/cmake/encoder_pkgConfig-version.cmake
+[22.333s] -- Installing: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/package.xml
+[22.342s] Invoked command in '/home/hcappel1/ros2_ws/src/encoder_pkg/build/encoder_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hcappel1/ros2_ws/install/motor_control:/opt/ros/humble /usr/bin/cmake --install /home/hcappel1/ros2_ws/src/encoder_pkg/build/encoder_pkg

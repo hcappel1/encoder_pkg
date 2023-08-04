@@ -5,6 +5,7 @@
 #include <chrono>
 #include <math.h>
 #include <cmath>
+#include <vector>
 
 using namespace std::chrono_literals;
 
@@ -16,12 +17,20 @@ public:
 	int m1_prev_time_ = 0;
 	int m1_time_diff_ = 0;
 	float m1_time_diff_secs_ = 0.1;
-	shared_ptr<float> m1_ang_vel_ = 0.0;
-	shared_ptr<float> m1_ang_vel_filtered_ = 0.0;
+	float m1_ang_vel_ = 0.0;
+	float m1_ang_vel_filtered_ = 0.0;
 	int m1_init_read_;
 	int m1_start_read_;
 	int m1_start_time_;
 	int m1_end_time_;
+	std::vector<float> m1_ang_vel_vec_;
+
+	//Filtering params 2
+	float xn = 0;
+	float yn = 0;
+	float xn1 = 0;
+	float yn1 = 0;
+	int k = 3;
 
 	EncoderTrigger() : Node("encoder_trigger")
 	{
@@ -86,21 +95,34 @@ private:
 		if (m1_end_time_ > m1_start_time_){
 			m1_time_diff_ = m1_end_time_ - m1_start_time_;
 		}
-		RCLCPP_INFO(this->get_logger(), "'%d'", m1_time_diff_);
+		//RCLCPP_INFO(this->get_logger(), "'%d'", m1_time_diff_);
 		m1_time_diff_secs_ = float(m1_time_diff_*pow(10,-9));
 		m1_ang_vel_ = (1/m1_time_diff_secs_)*(M_PI/20);
-		m1_ang_vel_filtered_ = LowPassFilter(&m1_ang_vel_);
+		m1_ang_vel_filtered_ = LowPassFilter(m1_ang_vel_);
+			
+		RCLCPP_INFO(this->get_logger(), "'%f'", m1_ang_vel_filtered_);
 
 	}
 
-	shared_ptr<float> LowPassFilter(&ang_vel) {
-		RCLCPP_INFO(this->get_logger(),"Inside the filter");
+	float LowPassFilter(float ang_vel) {
+		m1_ang_vel_vec_.push_back(ang_vel);
+		if (m1_ang_vel_vec_.size() == 3) {
+			for (int i=0; i < 4; i++) {
+				xn = m1_ang_vel_vec_[i];
+				yn = 0.990*yn1 + 0.005*xn + 0.005*xn1;
+				yn1 = yn;
+				xn1 = xn;
+			}
+			m1_ang_vel_vec_.erase(m1_ang_vel_vec_.begin());
+		}
+		
+		return yn;
 	}
 
 	void publisherCallback(void) {
 		auto message = std_msgs::msg::Float32();
-		message.data = m1_ang_vel_;
-		if (m1_ang_vel_ < 60) {
+		message.data = m1_ang_vel_filtered_;
+		if (m1_ang_vel_filtered_ < 60) {
 			ang_vel_publisher_->publish(message);
 		}
 	}

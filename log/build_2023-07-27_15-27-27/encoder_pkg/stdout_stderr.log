@@ -1,0 +1,80 @@
+-- The C compiler identification is GNU 11.3.0
+-- The CXX compiler identification is GNU 11.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+-- Found rclcpp: 16.0.4 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found ament_lint_auto: 0.12.6 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/hcappel1/ros2_ws/src/encoder_pkg/build/encoder_pkg
+[ 50%] [32mBuilding CXX object CMakeFiles/encoders_node.dir/src/encoders.cpp.o[0m
+[01m[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:19:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kshared_ptr[m[K’ does not name a type; did you mean ‘[01m[KSharedPtr[m[K’?
+   19 |         [01;31m[Kshared_ptr[m[K<float> m1_ang_vel_ = 0.0;
+      |         [01;31m[K^~~~~~~~~~[m[K
+      |         [32m[KSharedPtr[m[K
+[01m[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:20:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kshared_ptr[m[K’ does not name a type; did you mean ‘[01m[KSharedPtr[m[K’?
+   20 |         [01;31m[Kshared_ptr[m[K<float> m1_ang_vel_filtered_ = 0.0;
+      |         [01;31m[K^~~~~~~~~~[m[K
+      |         [32m[KSharedPtr[m[K
+[01m[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:96:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kshared_ptr[m[K’ does not name a type; did you mean ‘[01m[KSharedPtr[m[K’?
+   96 |         [01;31m[Kshared_ptr[m[K<float> LowPassFilter(shared_ptr<float> ang_vel) {
+      |         [01;31m[K^~~~~~~~~~[m[K
+      |         [32m[KSharedPtr[m[K
+[01m[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:[m[K In member function ‘[01m[Kvoid EncoderTrigger::encoder1Callback()[m[K’:
+[01m[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:46:41:[m[K [01;31m[Kerror: [m[K‘[01m[Km1_ang_vel_[m[K’ was not declared in this scope
+   46 |                                         [01;31m[Km1_ang_vel_[m[K = 1/m1_time_diff_secs_*M_PI/20;
+      |                                         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:60:41:[m[K [01;31m[Kerror: [m[K‘[01m[Km1_ang_vel_[m[K’ was not declared in this scope
+   60 |                                         [01;31m[Km1_ang_vel_[m[K = 1/m1_time_diff_secs_*M_PI/20;
+      |                                         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:[m[K In member function ‘[01m[Kvoid EncoderTrigger::encoder1Callbacknew()[m[K’:
+[01m[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:91:17:[m[K [01;31m[Kerror: [m[K‘[01m[Km1_ang_vel_[m[K’ was not declared in this scope
+   91 |                 [01;31m[Km1_ang_vel_[m[K = (1/m1_time_diff_secs_)*(M_PI/20);
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:92:17:[m[K [01;31m[Kerror: [m[K‘[01m[Km1_ang_vel_filtered_[m[K’ was not declared in this scope
+   92 |                 [01;31m[Km1_ang_vel_filtered_[m[K = LowPassFilter(&m1_ang_vel_);
+      |                 [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:92:40:[m[K [01;31m[Kerror: [m[K‘[01m[KLowPassFilter[m[K’ was not declared in this scope
+   92 |                 m1_ang_vel_filtered_ = [01;31m[KLowPassFilter[m[K(&m1_ang_vel_);
+      |                                        [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:[m[K In member function ‘[01m[Kvoid EncoderTrigger::publisherCallback()[m[K’:
+[01m[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:102:32:[m[K [01;31m[Kerror: [m[K‘[01m[Km1_ang_vel_[m[K’ was not declared in this scope
+  102 |                 message.data = [01;31m[Km1_ang_vel_[m[K;
+      |                                [01;31m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/encoders_node.dir/build.make:76: CMakeFiles/encoders_node.dir/src/encoders.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoders_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

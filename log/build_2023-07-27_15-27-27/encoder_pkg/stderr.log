@@ -1,0 +1,36 @@
+[01m[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:19:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kshared_ptr[m[K’ does not name a type; did you mean ‘[01m[KSharedPtr[m[K’?
+   19 |         [01;31m[Kshared_ptr[m[K<float> m1_ang_vel_ = 0.0;
+      |         [01;31m[K^~~~~~~~~~[m[K
+      |         [32m[KSharedPtr[m[K
+[01m[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:20:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kshared_ptr[m[K’ does not name a type; did you mean ‘[01m[KSharedPtr[m[K’?
+   20 |         [01;31m[Kshared_ptr[m[K<float> m1_ang_vel_filtered_ = 0.0;
+      |         [01;31m[K^~~~~~~~~~[m[K
+      |         [32m[KSharedPtr[m[K
+[01m[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:96:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kshared_ptr[m[K’ does not name a type; did you mean ‘[01m[KSharedPtr[m[K’?
+   96 |         [01;31m[Kshared_ptr[m[K<float> LowPassFilter(shared_ptr<float> ang_vel) {
+      |         [01;31m[K^~~~~~~~~~[m[K
+      |         [32m[KSharedPtr[m[K
+[01m[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:[m[K In member function ‘[01m[Kvoid EncoderTrigger::encoder1Callback()[m[K’:
+[01m[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:46:41:[m[K [01;31m[Kerror: [m[K‘[01m[Km1_ang_vel_[m[K’ was not declared in this scope
+   46 |                                         [01;31m[Km1_ang_vel_[m[K = 1/m1_time_diff_secs_*M_PI/20;
+      |                                         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:60:41:[m[K [01;31m[Kerror: [m[K‘[01m[Km1_ang_vel_[m[K’ was not declared in this scope
+   60 |                                         [01;31m[Km1_ang_vel_[m[K = 1/m1_time_diff_secs_*M_PI/20;
+      |                                         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:[m[K In member function ‘[01m[Kvoid EncoderTrigger::encoder1Callbacknew()[m[K’:
+[01m[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:91:17:[m[K [01;31m[Kerror: [m[K‘[01m[Km1_ang_vel_[m[K’ was not declared in this scope
+   91 |                 [01;31m[Km1_ang_vel_[m[K = (1/m1_time_diff_secs_)*(M_PI/20);
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:92:17:[m[K [01;31m[Kerror: [m[K‘[01m[Km1_ang_vel_filtered_[m[K’ was not declared in this scope
+   92 |                 [01;31m[Km1_ang_vel_filtered_[m[K = LowPassFilter(&m1_ang_vel_);
+      |                 [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:92:40:[m[K [01;31m[Kerror: [m[K‘[01m[KLowPassFilter[m[K’ was not declared in this scope
+   92 |                 m1_ang_vel_filtered_ = [01;31m[KLowPassFilter[m[K(&m1_ang_vel_);
+      |                                        [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:[m[K In member function ‘[01m[Kvoid EncoderTrigger::publisherCallback()[m[K’:
+[01m[K/home/hcappel1/ros2_ws/src/encoder_pkg/src/encoders.cpp:102:32:[m[K [01;31m[Kerror: [m[K‘[01m[Km1_ang_vel_[m[K’ was not declared in this scope
+  102 |                 message.data = [01;31m[Km1_ang_vel_[m[K;
+      |                                [01;31m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/encoders_node.dir/build.make:76: CMakeFiles/encoders_node.dir/src/encoders.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoders_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
