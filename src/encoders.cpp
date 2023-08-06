@@ -24,6 +24,7 @@ public:
 	int m1_start_time_;
 	int m1_end_time_;
 	std::vector<float> m1_ang_vel_vec_;
+	int m1_updated_ = false;
 
 	//Filtering params 2
 	float xn = 0;
@@ -38,9 +39,11 @@ public:
 		//Initialize one reentrant callback group object
 		callback_group_1_ = this->create_callback_group(rclcpp::CallbackGroupType::MutuallyExclusive);
 		callback_group_2_ = this->create_callback_group(rclcpp::CallbackGroupType::MutuallyExclusive);
+		callback_group_3_ = this->create_callback_group(rclcpp::CallbackGroupType::MutuallyExclusive);
 		ang_vel_publisher_ = this->create_publisher<std_msgs::msg::Float32>("wheel_velocities",10);
 		encoder1_timer_ = this->create_wall_timer(1ms, std::bind(&EncoderTrigger::encoder1Callbacknew, this), callback_group_1_);
 		ang_vel_timer_ = this->create_wall_timer(10ms, std::bind(&EncoderTrigger::publisherCallback, this), callback_group_2_);
+		encoder1_zero_check_timer_ = this->create_wall_timer(500ms, std::bind(&EncoderTrigger::encoderZeroCheckCallback, this), callback_group_3_);
 	}
 
 private:
@@ -89,6 +92,7 @@ private:
 		while(true) {
 			if(digitalRead(0) != m1_init_read_) {
 				m1_end_time_ = this->now().nanoseconds();
+				m1_updated_ = true;
 				break;
 			}
 		}
@@ -98,10 +102,19 @@ private:
 		//RCLCPP_INFO(this->get_logger(), "'%d'", m1_time_diff_);
 		m1_time_diff_secs_ = float(m1_time_diff_*pow(10,-9));
 		m1_ang_vel_ = (1/m1_time_diff_secs_)*(M_PI/20);
-		m1_ang_vel_filtered_ = LowPassFilter(m1_ang_vel_);
+		if (m1_ang_vel_ < 60) {
+			m1_ang_vel_filtered_ = LowPassFilter(m1_ang_vel_);
+		}
 			
 		RCLCPP_INFO(this->get_logger(), "'%f'", m1_ang_vel_filtered_);
 
+	}
+
+	void encoderZeroCheckCallback(void) {
+		if(m1_updated_ == false) {
+			m1_ang_vel_filtered_ = 0.0;
+		}
+		m1_updated_ = false;
 	}
 
 	float LowPassFilter(float ang_vel) {
@@ -128,8 +141,10 @@ private:
 	}
 	rclcpp::TimerBase::SharedPtr encoder1_timer_;
 	rclcpp::TimerBase::SharedPtr ang_vel_timer_;
+	rclcpp::TimerBase::SharedPtr encoder1_zero_check_timer_;
 	rclcpp::CallbackGroup::SharedPtr callback_group_1_;
 	rclcpp::CallbackGroup::SharedPtr callback_group_2_;
+	rclcpp::CallbackGroup::SharedPtr callback_group_3_;
 	rclcpp::Publisher<std_msgs::msg::Float32>::SharedPtr ang_vel_publisher_;
 };
 
