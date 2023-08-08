@@ -1,0 +1,256 @@
+[0.000000] (-) TimerEvent: {}
+[0.001684] (encoder_pkg) JobQueued: {'identifier': 'encoder_pkg', 'dependencies': OrderedDict()}
+[0.002281] (encoder_pkg) JobStarted: {'identifier': 'encoder_pkg'}
+[0.059632] (encoder_pkg) JobProgress: {'identifier': 'encoder_pkg', 'progress': 'cmake'}
+[0.065964] (encoder_pkg) JobProgress: {'identifier': 'encoder_pkg', 'progress': 'build'}
+[0.070617] (encoder_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hcappel1/ros2_ws/src/encoder_pkg/build/encoder_pkg', '--', '-j4', '-l4'], 'cwd': '/home/hcappel1/ros2_ws/src/encoder_pkg/build/encoder_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hcappel1'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/hcappel1'), ('OLDPWD', '/home/hcappel1/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1543'), ('SYSTEMD_EXEC_PID', '1741'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3447'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/hcappel1/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hcappel1'), ('JOURNAL_STREAM', '8:28802'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hcappel1'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/henry-pi:@/tmp/.ICE-unix/1699,unix/henry-pi:/tmp/.ICE-unix/1699'), ('INVOCATION_ID', '8d2647a486ee4f1a9ff0b0542cccec3e'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.X0Q381'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hcappel1/ros2_ws/install/motor_control:/home/hcappel1/ros2_ws/install/encoder_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:a414b15b-605a-46c8-8148-0a14ebff0616'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hcappel1/ros2_ws/src/encoder_pkg/build/encoder_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hcappel1/ros2_ws/install/motor_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hcappel1/ros2_ws/install/encoder_pkg:/home/hcappel1/ros2_ws/install/motor_control:/opt/ros/humble')]), 'shell': False}
+[0.099072] (-) TimerEvent: {}
+[0.199952] (-) TimerEvent: {}
+[0.292141] (encoder_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target encoders_node\x1b[0m\n'}
+[0.300216] (-) TimerEvent: {}
+[0.393532] (encoder_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/encoders_node.dir/src/encoders.cpp.o\x1b[0m\n'}
+[0.400342] (-) TimerEvent: {}
+[0.501254] (-) TimerEvent: {}
+[0.602262] (-) TimerEvent: {}
+[0.703487] (-) TimerEvent: {}
+[0.804990] (-) TimerEvent: {}
+[0.906146] (-) TimerEvent: {}
+[1.007221] (-) TimerEvent: {}
+[1.108293] (-) TimerEvent: {}
+[1.209466] (-) TimerEvent: {}
+[1.310253] (-) TimerEvent: {}
+[1.410985] (-) TimerEvent: {}
+[1.511704] (-) TimerEvent: {}
+[1.612520] (-) TimerEvent: {}
+[1.713413] (-) TimerEvent: {}
+[1.814178] (-) TimerEvent: {}
+[1.914892] (-) TimerEvent: {}
+[2.015610] (-) TimerEvent: {}
+[2.116467] (-) TimerEvent: {}
+[2.217372] (-) TimerEvent: {}
+[2.318229] (-) TimerEvent: {}
+[2.419123] (-) TimerEvent: {}
+[2.520042] (-) TimerEvent: {}
+[2.621218] (-) TimerEvent: {}
+[2.722024] (-) TimerEvent: {}
+[2.822909] (-) TimerEvent: {}
+[2.924209] (-) TimerEvent: {}
+[3.025129] (-) TimerEvent: {}
+[3.126023] (-) TimerEvent: {}
+[3.227215] (-) TimerEvent: {}
+[3.328445] (-) TimerEvent: {}
+[3.429344] (-) TimerEvent: {}
+[3.530252] (-) TimerEvent: {}
+[3.631104] (-) TimerEvent: {}
+[3.732013] (-) TimerEvent: {}
+[3.832858] (-) TimerEvent: {}
+[3.933782] (-) TimerEvent: {}
+[4.034689] (-) TimerEvent: {}
+[4.135743] (-) TimerEvent: {}
+[4.236605] (-) TimerEvent: {}
+[4.337591] (-) TimerEvent: {}
+[4.438652] (-) TimerEvent: {}
+[4.539497] (-) TimerEvent: {}
+[4.640457] (-) TimerEvent: {}
+[4.741386] (-) TimerEvent: {}
+[4.842291] (-) TimerEvent: {}
+[4.943175] (-) TimerEvent: {}
+[5.043975] (-) TimerEvent: {}
+[5.144836] (-) TimerEvent: {}
+[5.245709] (-) TimerEvent: {}
+[5.346579] (-) TimerEvent: {}
+[5.447477] (-) TimerEvent: {}
+[5.548395] (-) TimerEvent: {}
+[5.649303] (-) TimerEvent: {}
+[5.750181] (-) TimerEvent: {}
+[5.851056] (-) TimerEvent: {}
+[5.951937] (-) TimerEvent: {}
+[6.052849] (-) TimerEvent: {}
+[6.153769] (-) TimerEvent: {}
+[6.254846] (-) TimerEvent: {}
+[6.355672] (-) TimerEvent: {}
+[6.456574] (-) TimerEvent: {}
+[6.557658] (-) TimerEvent: {}
+[6.658464] (-) TimerEvent: {}
+[6.759355] (-) TimerEvent: {}
+[6.860185] (-) TimerEvent: {}
+[6.961049] (-) TimerEvent: {}
+[7.062002] (-) TimerEvent: {}
+[7.162880] (-) TimerEvent: {}
+[7.263744] (-) TimerEvent: {}
+[7.364611] (-) TimerEvent: {}
+[7.465562] (-) TimerEvent: {}
+[7.566444] (-) TimerEvent: {}
+[7.667364] (-) TimerEvent: {}
+[7.768179] (-) TimerEvent: {}
+[7.869099] (-) TimerEvent: {}
+[7.970067] (-) TimerEvent: {}
+[8.071115] (-) TimerEvent: {}
+[8.172009] (-) TimerEvent: {}
+[8.273012] (-) TimerEvent: {}
+[8.374237] (-) TimerEvent: {}
+[8.475049] (-) TimerEvent: {}
+[8.575958] (-) TimerEvent: {}
+[8.676884] (-) TimerEvent: {}
+[8.777827] (-) TimerEvent: {}
+[8.878729] (-) TimerEvent: {}
+[8.979615] (-) TimerEvent: {}
+[9.080486] (-) TimerEvent: {}
+[9.181373] (-) TimerEvent: {}
+[9.282356] (-) TimerEvent: {}
+[9.383294] (-) TimerEvent: {}
+[9.484297] (-) TimerEvent: {}
+[9.585180] (-) TimerEvent: {}
+[9.686103] (-) TimerEvent: {}
+[9.787054] (-) TimerEvent: {}
+[9.888173] (-) TimerEvent: {}
+[9.989045] (-) TimerEvent: {}
+[10.089891] (-) TimerEvent: {}
+[10.191112] (-) TimerEvent: {}
+[10.292200] (-) TimerEvent: {}
+[10.393650] (-) TimerEvent: {}
+[10.494525] (-) TimerEvent: {}
+[10.595469] (-) TimerEvent: {}
+[10.696351] (-) TimerEvent: {}
+[10.797243] (-) TimerEvent: {}
+[10.898152] (-) TimerEvent: {}
+[10.999012] (-) TimerEvent: {}
+[11.099877] (-) TimerEvent: {}
+[11.200853] (-) TimerEvent: {}
+[11.301856] (-) TimerEvent: {}
+[11.402712] (-) TimerEvent: {}
+[11.503584] (-) TimerEvent: {}
+[11.604545] (-) TimerEvent: {}
+[11.705711] (-) TimerEvent: {}
+[11.806564] (-) TimerEvent: {}
+[11.907444] (-) TimerEvent: {}
+[12.008310] (-) TimerEvent: {}
+[12.109258] (-) TimerEvent: {}
+[12.210107] (-) TimerEvent: {}
+[12.311114] (-) TimerEvent: {}
+[12.412223] (-) TimerEvent: {}
+[12.513309] (-) TimerEvent: {}
+[12.614168] (-) TimerEvent: {}
+[12.714974] (-) TimerEvent: {}
+[12.815879] (-) TimerEvent: {}
+[12.916756] (-) TimerEvent: {}
+[13.017607] (-) TimerEvent: {}
+[13.118484] (-) TimerEvent: {}
+[13.219481] (-) TimerEvent: {}
+[13.320884] (-) TimerEvent: {}
+[13.421967] (-) TimerEvent: {}
+[13.522831] (-) TimerEvent: {}
+[13.623728] (-) TimerEvent: {}
+[13.724625] (-) TimerEvent: {}
+[13.825499] (-) TimerEvent: {}
+[13.926352] (-) TimerEvent: {}
+[14.027306] (-) TimerEvent: {}
+[14.128146] (-) TimerEvent: {}
+[14.229046] (-) TimerEvent: {}
+[14.330246] (-) TimerEvent: {}
+[14.431349] (-) TimerEvent: {}
+[14.532116] (-) TimerEvent: {}
+[14.632916] (-) TimerEvent: {}
+[14.733768] (-) TimerEvent: {}
+[14.834758] (-) TimerEvent: {}
+[14.936311] (-) TimerEvent: {}
+[15.037176] (-) TimerEvent: {}
+[15.138339] (-) TimerEvent: {}
+[15.239905] (-) TimerEvent: {}
+[15.341005] (-) TimerEvent: {}
+[15.442085] (-) TimerEvent: {}
+[15.542944] (-) TimerEvent: {}
+[15.643823] (-) TimerEvent: {}
+[15.744795] (-) TimerEvent: {}
+[15.845616] (-) TimerEvent: {}
+[15.946515] (-) TimerEvent: {}
+[16.047382] (-) TimerEvent: {}
+[16.148245] (-) TimerEvent: {}
+[16.249107] (-) TimerEvent: {}
+[16.349941] (-) TimerEvent: {}
+[16.450865] (-) TimerEvent: {}
+[16.551731] (-) TimerEvent: {}
+[16.652621] (-) TimerEvent: {}
+[16.753503] (-) TimerEvent: {}
+[16.854373] (-) TimerEvent: {}
+[16.955274] (-) TimerEvent: {}
+[17.056084] (-) TimerEvent: {}
+[17.156870] (-) TimerEvent: {}
+[17.257747] (-) TimerEvent: {}
+[17.358858] (-) TimerEvent: {}
+[17.459721] (-) TimerEvent: {}
+[17.560574] (-) TimerEvent: {}
+[17.661454] (-) TimerEvent: {}
+[17.762261] (-) TimerEvent: {}
+[17.863108] (-) TimerEvent: {}
+[17.964033] (-) TimerEvent: {}
+[18.064973] (-) TimerEvent: {}
+[18.165853] (-) TimerEvent: {}
+[18.266727] (-) TimerEvent: {}
+[18.367701] (-) TimerEvent: {}
+[18.468604] (-) TimerEvent: {}
+[18.569542] (-) TimerEvent: {}
+[18.670415] (-) TimerEvent: {}
+[18.771339] (-) TimerEvent: {}
+[18.872248] (-) TimerEvent: {}
+[18.973396] (-) TimerEvent: {}
+[19.074219] (-) TimerEvent: {}
+[19.175124] (-) TimerEvent: {}
+[19.276094] (-) TimerEvent: {}
+[19.377519] (-) TimerEvent: {}
+[19.478477] (-) TimerEvent: {}
+[19.579436] (-) TimerEvent: {}
+[19.680477] (-) TimerEvent: {}
+[19.781279] (-) TimerEvent: {}
+[19.882148] (-) TimerEvent: {}
+[19.982999] (-) TimerEvent: {}
+[20.083872] (-) TimerEvent: {}
+[20.184973] (-) TimerEvent: {}
+[20.286493] (-) TimerEvent: {}
+[20.388288] (-) TimerEvent: {}
+[20.477353] (encoder_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable encoders_node\x1b[0m\n'}
+[20.488577] (-) TimerEvent: {}
+[20.590494] (-) TimerEvent: {}
+[20.692454] (-) TimerEvent: {}
+[20.794591] (-) TimerEvent: {}
+[20.895840] (-) TimerEvent: {}
+[20.997409] (-) TimerEvent: {}
+[21.098762] (-) TimerEvent: {}
+[21.200283] (-) TimerEvent: {}
+[21.301590] (-) TimerEvent: {}
+[21.402504] (-) TimerEvent: {}
+[21.503284] (-) TimerEvent: {}
+[21.604250] (-) TimerEvent: {}
+[21.702683] (encoder_pkg) StdoutLine: {'line': b'[100%] Built target encoders_node\n'}
+[21.704449] (-) TimerEvent: {}
+[21.745532] (encoder_pkg) CommandEnded: {'returncode': 0}
+[21.804836] (-) TimerEvent: {}
+[21.887504] (encoder_pkg) JobProgress: {'identifier': 'encoder_pkg', 'progress': 'install'}
+[21.905075] (-) TimerEvent: {}
+[21.926968] (encoder_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hcappel1/ros2_ws/src/encoder_pkg/build/encoder_pkg'], 'cwd': '/home/hcappel1/ros2_ws/src/encoder_pkg/build/encoder_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hcappel1'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/hcappel1'), ('OLDPWD', '/home/hcappel1/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1543'), ('SYSTEMD_EXEC_PID', '1741'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3447'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/hcappel1/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hcappel1'), ('JOURNAL_STREAM', '8:28802'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hcappel1'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/henry-pi:@/tmp/.ICE-unix/1699,unix/henry-pi:/tmp/.ICE-unix/1699'), ('INVOCATION_ID', '8d2647a486ee4f1a9ff0b0542cccec3e'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.X0Q381'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hcappel1/ros2_ws/install/motor_control:/home/hcappel1/ros2_ws/install/encoder_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:a414b15b-605a-46c8-8148-0a14ebff0616'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hcappel1/ros2_ws/src/encoder_pkg/build/encoder_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hcappel1/ros2_ws/install/motor_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hcappel1/ros2_ws/install/encoder_pkg:/home/hcappel1/ros2_ws/install/motor_control:/opt/ros/humble')]), 'shell': False}
+[21.959987] (encoder_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[21.963262] (encoder_pkg) StdoutLine: {'line': b'-- Installing: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/lib/encoder_pkg/encoders_node\n'}
+[21.976428] (encoder_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/lib/encoder_pkg/encoders_node" to ""\n'}
+[21.977247] (encoder_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/launch\n'}
+[21.977851] (encoder_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/launch/encoders.launch.py\n'}
+[21.978409] (encoder_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/ament_index/resource_index/package_run_dependencies/encoder_pkg\n'}
+[21.978984] (encoder_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/ament_index/resource_index/parent_prefix_path/encoder_pkg\n'}
+[21.979568] (encoder_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/environment/ament_prefix_path.sh\n'}
+[21.980099] (encoder_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/environment/ament_prefix_path.dsv\n'}
+[21.980595] (encoder_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/environment/path.sh\n'}
+[21.981263] (encoder_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/environment/path.dsv\n'}
+[21.981755] (encoder_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/local_setup.bash\n'}
+[21.982202] (encoder_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/local_setup.sh\n'}
+[21.982636] (encoder_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/local_setup.zsh\n'}
+[21.983010] (encoder_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/local_setup.dsv\n'}
+[21.983380] (encoder_pkg) StdoutLine: {'line': b'-- Installing: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/package.dsv\n'}
+[21.984621] (encoder_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/ament_index/resource_index/packages/encoder_pkg\n'}
+[21.985206] (encoder_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/cmake/encoder_pkgConfig.cmake\n'}
+[21.985713] (encoder_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/cmake/encoder_pkgConfig-version.cmake\n'}
+[21.986125] (encoder_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/hcappel1/ros2_ws/src/encoder_pkg/install/encoder_pkg/share/encoder_pkg/package.xml\n'}
+[21.991178] (encoder_pkg) CommandEnded: {'returncode': 0}
+[22.005171] (-) TimerEvent: {}
+[22.106000] (-) TimerEvent: {}
+[22.208505] (-) TimerEvent: {}
+[22.273772] (encoder_pkg) JobEnded: {'identifier': 'encoder_pkg', 'rc': 0}
+[22.278496] (-) EventReactorShutdown: {}
